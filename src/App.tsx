@@ -1,13 +1,13 @@
-import "./App.css";
+import type { FC } from "react";
+import PokemonCard from "./components/PokemonCard";
+import "./components/PokemonCard.css";
 
-import MyTitle from "./components/MyTitle";
-
-function App() {
-  return (
-    <section>
-      <MyTitle/>
-    </section>
-  );
-}
+const App: FC = () => {
+	return (
+		<div className="app">
+			<PokemonCard />
+		</div>
+	);
+};
 
 export default App;
